@@ -1,0 +1,13 @@
+.header-logo-style {
+  height: 80px;
+  width: 200px;
+  padding: 20px;
+}
+.header-cont {
+  height: 80px;
+  background-color: #f1f5f9;
+}
+.all-course-list {
+  display: flex;
+  justify-content: space-around;
+}

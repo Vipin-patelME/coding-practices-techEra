@@ -1,0 +1,12 @@
+.list-item {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.logo-style {
+  height: 60px;
+  width: 60px;
+}
