@@ -3,16 +3,7 @@ import Loader from 'react-loader-spinner'
 import './index.css'
 
 import CourseItem from '../CourseItem'
-
-const Header = () => {
-  const logoUrl =
-    'https://assets.ccbp.in/frontend/react-js/tech-era/website-logo-img.png'
-  return (
-    <div className="header-cont">
-      <img src={logoUrl} alt="website logo" className="header-logo-style" />
-    </div>
-  )
-}
+import Header from '../Header'
 
 class AllCourses extends Component {
   state = {coursesList: [], isLoading: true}
@@ -35,7 +26,7 @@ class AllCourses extends Component {
   }
 
   renderLoadingView = () => (
-    <div className="products-loader-container">
+    <div data-testid="loader" className="products-loader-container">
       <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
     </div>
   )
